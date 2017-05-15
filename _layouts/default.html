@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tasks, microtasks, queues and schedules</title>
+
+  {% comment %}
+  <!-- 在线若没有 styles.css，github 自动提供；本地预览需要在线的 styles.css。 -->
+  {% endcomment %}
+  {% if site.github.owner_name %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  {% else %}
+  <link rel="stylesheet" href="https://hongfanqie.github.io/default/assets/css/style.css">
+  {% endif %}
+
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css?v=' | append: site.github.build_revision | relative_url }}">
+</head>
+<body>
+  <article class="markdown-body">
+    {{ content }}
+  </article>
+  <script src="{{ '/assets/js/script.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+</body>
+</html>

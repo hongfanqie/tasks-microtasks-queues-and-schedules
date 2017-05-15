@@ -1,0 +1,78 @@
+---
+---
+
+$mobile-boundry: 530px;
+
+@import "components";
+@import "walkthrough";
+
+@media (min-width: 900px) {
+  .markdown-body {
+    width: 810px;
+    margin: auto;
+    padding: 45px;
+  }
+}
+
+@media (max-width: 900px) {
+  .markdown-body {
+    padding: 1.5em;
+  }
+}
+
+// override github styles
+
+.codehilite pre {
+  background: #2d2d2d;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+
+  @media screen and (min-width: $mobile-boundry) {
+    font-size: 1.1rem;
+  }
+}
+
+.event-loop-walkthrough {
+  margin-bottom: 16px;
+
+  * {
+    box-sizing: unset;
+  }
+
+  table {
+    display: table;
+    margin-bottom: 0;
+
+    tr {
+      border-color: #fff;
+      background-color: unset !important;
+    }
+
+    th {
+      padding: 10px 5px;
+      font-weight: normal;
+    }
+
+    td {
+      padding: 0;
+      border-style: unset;
+    }
+  }
+}
+
+.browser-results {
+  li + li {
+    margin-top: 0;
+  }
+
+  img {
+    background: transparent;
+  }
+
+}
+
+.outer-test {
+  box-sizing: unset;
+  margin-bottom: 16px;
+}
